@@ -57,10 +57,10 @@ class MainActivity : Activity() {
 
                     val text = textResult.text
 
-                    return newFixedLengthResponse("Text Detected: $text")
+                    return newFixedLengthResponse(text)
 
                 } catch (e: Exception) {
-                    return newFixedLengthResponse("Ohno: $e")
+                    return newFixedLengthResponse("Error: $e")
                 }
             }
 
